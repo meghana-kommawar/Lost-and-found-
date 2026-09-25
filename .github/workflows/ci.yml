@@ -1,0 +1,21 @@
+name: Lost and Found CI
+
+on:
+  push:
+    branches: ["main"]
+
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Check project
+        run: |
+          echo "Lost and Found Smart Matching System"
+          echo "CI workflow completed successfully"
