@@ -1,12 +1,12 @@
 # Lost and Found Smart Matching System
 import os
 import smtplib
-import mysql.connector
+import mysql.connector  # type: ignore[reportMissingImports]
 
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
-from flask import (
+from flask import (  # type: ignore[reportMissingImports]
     Flask,
     render_template,
     request,
@@ -17,8 +17,8 @@ from flask import (
     send_from_directory
 )
 
-from werkzeug.security import generate_password_hash, check_password_hash
-from werkzeug.utils import secure_filename
+from werkzeug.security import generate_password_hash, check_password_hash  # type: ignore[reportMissingImports]
+from werkzeug.utils import secure_filename  # type: ignore[reportMissingImports]
 
 from matching import calculate_match_score
 
