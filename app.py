@@ -1,4 +1,4 @@
-# Lost and Found Smart Matching System
+# Smart Lost and Found Management System
 import os
 import smtplib
 import mysql.connector  # type: ignore[reportMissingImports]
